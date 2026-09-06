@@ -286,9 +286,12 @@ body {
   font: inherit;
   font-weight: 600;
   font-size: 0.95rem;
-  padding: 0.8rem 1.15rem;
+  padding: 0.9rem 1.35rem;
+  min-height: 2.85rem;
   border-radius: 0.85rem;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
   transition:
     transform 0.15s ease,
     background 0.2s ease,
