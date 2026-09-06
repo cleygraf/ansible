@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drei — Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <main class="stage">
+      <header class="brand">
+        <p class="brand-mark">Drei</p>
+        <h1 class="headline">Tic Tac Toe</h1>
+        <p class="tagline">Drei in einer Reihe — abwechselnd zu zweit am gleichen Gerät.</p>
+      </header>
+
+      <section class="status" aria-live="polite">
+        <p class="turn" id="status">X ist dran</p>
+        <div class="scoreboard" aria-label="Spielstand">
+          <div class="score score-x">
+            <span class="score-label">X</span>
+            <span class="score-value" id="score-x">0</span>
+          </div>
+          <div class="score score-o">
+            <span class="score-label">O</span>
+            <span class="score-value" id="score-o">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="board-wrap" aria-label="Spielfeld">
+        <div class="board" id="board" role="grid" aria-label="3 mal 3 Spielfeld">
+          <button class="cell" data-index="0" role="gridcell" aria-label="Feld 1"></button>
+          <button class="cell" data-index="1" role="gridcell" aria-label="Feld 2"></button>
+          <button class="cell" data-index="2" role="gridcell" aria-label="Feld 3"></button>
+          <button class="cell" data-index="3" role="gridcell" aria-label="Feld 4"></button>
+          <button class="cell" data-index="4" role="gridcell" aria-label="Feld 5"></button>
+          <button class="cell" data-index="5" role="gridcell" aria-label="Feld 6"></button>
+          <button class="cell" data-index="6" role="gridcell" aria-label="Feld 7"></button>
+          <button class="cell" data-index="7" role="gridcell" aria-label="Feld 8"></button>
+          <button class="cell" data-index="8" role="gridcell" aria-label="Feld 9"></button>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="new-game">Neues Spiel</button>
+        <button type="button" class="btn btn-ghost" id="reset-scores">Punkte zurücksetzen</button>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
